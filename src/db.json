@@ -1,0 +1,64 @@
+{
+  "orders": [
+    {
+      "ingredients": {
+        "Salad": 1,
+        "Bacon": 1,
+        "Cheese": 1,
+        "Meat": 1
+      },
+      "price": "7.9",
+      "customer": {
+        "name": "Duy Huynh",
+        "address": {
+          "street": "Street 1",
+          "zipCode": "51342",
+          "country": "Vietnam"
+        },
+        "email": "duyhuynh@example.com"
+      },
+      "deliveryMethod": "fastest",
+      "id": 1
+    },
+    {
+      "ingredients": {
+        "Salad": 2,
+        "Bacon": 2,
+        "Cheese": 3,
+        "Meat": 2
+      },
+      "price": "12.200000000000003",
+      "customer": {
+        "name": "Duy Huynh",
+        "address": {
+          "street": "Street 1",
+          "zipCode": "51342",
+          "country": "Vietnam"
+        },
+        "email": "duyhuynh@example.com"
+      },
+      "deliveryMethod": "fastest",
+      "id": 2
+    },
+    {
+      "ingredients": {
+        "Salad": 3,
+        "Bacon": 2,
+        "Cheese": 2,
+        "Meat": 2
+      },
+      "price": "12.300000000000002",
+      "customer": {
+        "name": "Duy Huynh",
+        "address": {
+          "street": "Street 1",
+          "zipCode": "51342",
+          "country": "Vietnam"
+        },
+        "email": "duyhuynh@example.com"
+      },
+      "deliveryMethod": "fastest",
+      "id": 3
+    }
+  ]
+}

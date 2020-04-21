@@ -13,7 +13,7 @@ const INGREDIENT_PRICES = {
   Bacon: 1.7
 }
 
-const BurgerBuilder = () => {
+const BurgerBuilder = (props) => {
   const [ingredients, setIngredients] = useState({
     Salad: 0,
     Bacon: 0,
@@ -37,7 +37,18 @@ const BurgerBuilder = () => {
 
   const purchaseCancelHandler = () => setPurchasing(false)
 
-  const purchaseContinueHandler = () => alert('Done!')
+  const purchaseContinueHandler = () => {
+    const queryParams = [];
+    for (let i in ingredients) {
+        queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(ingredients[i]));
+    }
+    queryParams.push('price=' + totalPrice);
+    const queryString = queryParams.join('&');
+    props.history.push({
+        pathname: '/checkout',
+        search: '?' + queryString
+    });
+  }
 
   const removeIngredientHandler = type => {
     setIngredients(prev => {
